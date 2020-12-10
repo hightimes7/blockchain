@@ -1,0 +1,89 @@
+<head>
+    <!-- Bootstrap include -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+
+    <!-- jquery 버전 유의 -->
+    <!-- slim/jquery, 3.1.0 윗 버전에서 ajax가 작동하지 않는 오류 확인 -->
+    <!-- Bootstrap의 CDN을 copy&paste 하되 Line 8의 버전만 3.1.0으로 수정하세요 -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <i class="fas fa-fish" style="font-size: 150px;color:darkturquoise"></i>
+        <h1> DOLPHINS <br>프로토타입 </h1>
+        <hr>
+        <div class= "space"></div>
+        <!-- 자격증 과정 -->
+        <div class="row justify-content-md-center">
+            <div class="col-lg">
+                <div id="new-alert"></div>
+                <h3> 자격증 과정 </h3>
+                <button class="btn btn-info" id="new-btn">
+                <a href="/startlevel.html">추가하기</a></button>
+            </div>   
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <!-- 자격증 조회 -->
+        <div class="row justify-content-md-center">
+            <div class="col-lg">
+                <div id="find-alert"></div>
+                <h3>자격증 조회</h3>
+                <button class="btn btn-info" id="find-btn">
+                <a href="/getlevel.html">조회하기</a></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- styling -->
+<style>
+    .space {
+        height: 50px;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+        margin: 50px 50px;
+        padding: 20px 20px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%);        
+    }
+
+    button{
+        margin: 20px 10px;  
+        width: 200px; 
+        height: 50px;    
+    }
+
+    a {
+        color: white;
+        font-size: 20pt;
+    }
+    a:hover{
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    input{
+        width: 300px;
+        padding: 10px 8px;
+    }
+
+    .col-6{
+        padding: 20px 10px;
+    }
+</style>
